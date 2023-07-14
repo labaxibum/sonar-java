@@ -8,16 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.sonar.plugins.java.api.JavaCheck;
-import org.sonar.samples.java.checks.AvoidAnnotationRule;
-import org.sonar.samples.java.checks.AvoidBrandInMethodNamesRule;
-import org.sonar.samples.java.checks.AvoidMethodDeclarationRule;
-import org.sonar.samples.java.checks.AvoidSuperClassRule;
-import org.sonar.samples.java.checks.AvoidTreeListRule;
-import org.sonar.samples.java.checks.MyCustomSubscriptionRule;
-import org.sonar.samples.java.checks.NoIfStatementInTestsRule;
-import org.sonar.samples.java.checks.SecurityAnnotationMandatoryRule;
-import org.sonar.samples.java.checks.SpringControllerRequestMappingEntityRule;
+import org.sonar.samples.java.checks.*;
 
 public final class RulesList {
 
@@ -43,7 +36,8 @@ public final class RulesList {
       AvoidSuperClassRule.class,
       AvoidTreeListRule.class,
       MyCustomSubscriptionRule.class,
-      SecurityAnnotationMandatoryRule.class));
+      SecurityAnnotationMandatoryRule.class,
+      MyFirstCustomCheck.class));
   }
 
   /**

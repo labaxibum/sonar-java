@@ -6,6 +6,7 @@ package org.sonar.samples.java;
 
 import org.junit.jupiter.api.Test;
 import org.sonar.plugins.java.api.CheckRegistrar;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MyJavaFileCheckRegistrarTest {
@@ -17,7 +18,7 @@ class MyJavaFileCheckRegistrarTest {
     MyJavaFileCheckRegistrar registrar = new MyJavaFileCheckRegistrar();
     registrar.register(context);
 
-    assertThat(context.checkClasses()).hasSize(8);
+    assertThat(context.checkClasses()).hasSize(9);
     assertThat(context.testCheckClasses()).hasSize(1);
   }
 

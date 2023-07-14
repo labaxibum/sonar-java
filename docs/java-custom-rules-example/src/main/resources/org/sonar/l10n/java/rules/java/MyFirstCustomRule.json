@@ -1,0 +1,11 @@
+{
+  "title": "Credit card number should not be hard-coded",
+  "type": "Bug",
+  "status": "ready",
+  "tags": [
+    "bugs",
+    "custom",
+    "rule"
+  ],
+  "defaultSeverity": "Critical"
+}
